@@ -1,0 +1,1 @@
+Educational assignment at Coding Dojo on the basics of Java Script involving randomization and floor operators.

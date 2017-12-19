@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // use strict;
+        function slots (coinsbalance, target) {
+            console.log ('GAME BEGINS!!!');
+            var gamenr = 0;
+            var win = 0;
+            while (coinsbalance > 0 && coinsbalance <= target) {
+                gamenr ++;
+                coinsbalance --;
+                win = 0;
+                if (Math.trunc (Math.random ()* 100) == 1) {
+                    win = Math.trunc (Math.random () * 50) + 51;
+                    coinsbalance += win;
+                    console.log ('game nr. ' +  gamenr + ' win ' + win);
+                }
+            }
+                console.log ('Total nr. of plays ' + gamenr + ' Ending balance ' + coinsbalance + ' coins');
+                console.log ('GAME OVER');
+        }
+        slots (100, 200);
+    </script>
+    
+</body>
+</html>
